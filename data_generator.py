@@ -114,9 +114,9 @@ product_templates = {
             "{brand_short} {adjective} {category} {model}"
         ],
         "desc_templates": [
-            "{quality}な{category}です。{feature}機能と{spec}を搭載し、{benefit}。",
-            "{brand_name}の{adjective}な{category}です。{feature}対応で{spec}を備えており、{benefit}ための最適な選択です。",
-            "{quality}な{spec}を持つ{category}です。{feature}が特徴で、{benefit}。{brand_name}ならではの高品質製品です。"
+            "{quality}{category}です。{feature}機能と{spec}を搭載し、{benefit}。",
+            "{brand_name}の{adjective}な{category}です。{feature}対応で{spec}を備えており、{benefit}。",
+            "{quality}{spec}を持つ{category}です。{feature}が特徴で、{benefit}。{brand_name}ならではの高品質製品です。"
         ]
     },
     "家電": {
@@ -126,9 +126,9 @@ product_templates = {
             "{brand_short} {adjective} {category}"
         ],
         "desc_templates": [
-            "{quality}な設計の{category}です。{feature}機能付きで{benefit}。{spec}でエネルギー効率も抜群です。",
+            "{quality}設計の{category}です。{feature}機能付きで{benefit}。{spec}でエネルギー効率も抜群です。",
             "{brand_name}の{adjective}な{category}です。{feature}と{spec}を兼ね備え、{benefit}。",
-            "高性能な{category}です。{quality}なデザインと{feature}機能を搭載し、{spec}で{benefit}を実現します。"
+            "高性能な{category}です。{quality}なデザインと{feature}機能を搭載し、{spec}で{benefit}。"
         ]
     },
     "家具": {
@@ -138,9 +138,9 @@ product_templates = {
             "{series} {category} by {brand_short}"
         ],
         "desc_templates": [
-            "{quality}な{material}を使用した{category}です。{feature}なデザインで{benefit}。{room}に最適です。",
-            "{brand_name}の{adjective}な{category}です。{material}製で{feature}な仕上がり。{benefit}と同時に{room}に調和します。",
-            "{quality}で{feature}な{category}です。{material}で作られており、{benefit}。{room}のインテリアを引き立てます。"
+            "{quality}{material}を使用した{category}です。{feature}なデザインで{benefit}。{room}に最適です。",
+            "{brand_name}の{adjective}な{category}です。{material}製で{feature}な仕上がり。{room}に調和します。",
+            "{quality}{feature}な{category}です。{material}で作られており、{benefit}。{room}のインテリアを引き立てます。"
         ]
     },
     "衣類": {
@@ -150,9 +150,9 @@ product_templates = {
             "{series} {category} - {brand_short}"
         ],
         "desc_templates": [
-            "{quality}な{material}を使用した{category}です。{feature}なデザインで{benefit}。{season}におすすめです。",
-            "{brand_name}の{adjective}な{category}です。{material}製で{feature}な着心地。{benefit}と同時に{season}に最適です。",
-            "{quality}で{feature}な{category}です。{material}で作られており、{benefit}。{season}のファッションを彩ります。"
+            "{quality}{material}を使用した{category}です。{feature}なデザインで{benefit}。{season}におすすめです。",
+            "{brand_name}の{adjective}な{category}です。{material}製で{feature}な着心地。{season}に最適です。",
+            "{quality}{feature}な{category}です。{material}で作られており、{benefit}。{season}のファッションを彩ります。"
         ]
     },
     "食品": {
@@ -162,9 +162,9 @@ product_templates = {
             "{flavor} {category} - {brand_short}"
         ],
         "desc_templates": [
-            "{quality}な原材料を使った{category}です。{feature}な味わいで{benefit}。{occasion}におすすめです。",
+            "{quality}原材料を使った{category}です。{feature}な味わいで{benefit}。{occasion}におすすめです。",
             "{brand_name}の{adjective}な{category}です。{feature}と{flavor}の風味が特徴で、{benefit}。",
-            "{quality}な{flavor}の{category}です。{feature}なレシピで作られており、{benefit}。{occasion}に最適です。"
+            "{quality}{flavor}の{category}です。{feature}なレシピで作られており、{benefit}。{occasion}に最適です。"
         ]
     },
     "スポーツ": {
@@ -174,9 +174,9 @@ product_templates = {
             "{series} {category} - {brand_short}"
         ],
         "desc_templates": [
-            "{quality}な{category}です。{feature}な設計で{benefit}。スポーツパフォーマンスを向上させます。",
+            "{quality}{category}です。{feature}な設計で{benefit}。スポーツパフォーマンスを向上させます。",
             "{brand_name}の{adjective}な{category}です。{feature}機能で{benefit}。",
-            "{quality}で{feature}な{category}です。プロ仕様の設計で{benefit}。本格的なスポーツに最適です。"
+            "{quality}{feature}な{category}です。プロ仕様の設計で{benefit}。本格的なスポーツに最適です。"
         ]
     },
     "美容": {
@@ -186,9 +186,9 @@ product_templates = {
             "{series} {category} - {brand_short}"
         ],
         "desc_templates": [
-            "{quality}な{category}です。{feature}成分で{benefit}。美容と健康をサポートします。",
+            "{quality}{category}です。{feature}成分で{benefit}。美容と健康をサポートします。",
             "{brand_name}の{adjective}な{category}です。{feature}処方で{benefit}。",
-            "{quality}で{feature}な{category}です。厳選された成分で{benefit}。毎日のケアに最適です。"
+            "{quality}{feature}な{category}です。厳選された成分で{benefit}。毎日のケアに最適です。"
         ]
     }
 }
@@ -200,9 +200,9 @@ product_attributes = {
         "スマート", "エコ", "ラグジュアリー", "カジュアル", "エレガント"
     ],
     "quality": [
-        "高品質", "耐久性に優れた", "軽量", "コンパクト", "洗練された", 
-        "革新的", "伝統的", "先進的", "シンプル", "機能的",
-        "環境に優しい", "ユーザーフレンドリー", "革命的", "快適", "高性能"
+        "高品質な", "耐久性に優れた", "軽量な", "コンパクトな", "洗練された", 
+        "革新的な", "伝統的な", "先進的な", "シンプルな", "機能的な",
+        "環境に優しい", "ユーザーフレンドリーな", "革命的な", "快適な", "高性能な"
     ],
     "feature": [
         "最新", "革新的", "独自", "特許取得済み", "高度", 
