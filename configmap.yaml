@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-config
+  namespace: katagiri-liberty-test
+data:
+  db_host: "mysql"  # MySQLのサービス名に合わせて変更
+  db_name: "mydb"         # 実際のデータベース名に変更
